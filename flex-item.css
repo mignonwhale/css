@@ -1,0 +1,88 @@
+body {
+    font-family: "D2Coding";
+}
+
+.container {
+    display: flex;
+    border: 3px solid;
+    /* width: 400px; */
+}
+
+.item1 {
+    background-color: #ffecb3;
+}
+
+.item2 {
+    background-color: #ffffe5;
+}
+
+.item3 {
+    background-color: #cbba83;
+}
+
+.item4 {
+    background-color: #ffcc80;
+}
+
+.flex-basis {
+    /* flex-direction: column; */
+}
+
+.auto .item {
+    flex-basis: auto;
+    /*아이템의 width로 기본값*/
+}
+
+.content .item {
+    flex-basis: content;
+}
+
+.percent .item {
+    flex-basis: 15%;
+}
+
+.rem .item {
+    flex-basis: 3rem;
+}
+
+.px .item {
+    flex-basis: 50px;
+}
+
+.width .item {
+    width: 50px;
+    word-wrap: break-word;
+}
+
+/* flex-basis가 차지한 아이템 크기 외 여백을 flex-grow의 비율로 차지한다. */
+.flex-grow .item1 {
+    /* flex-grow: 0;  기본값*/
+    flex-grow: 0.2;
+}
+
+.flex-grow .item2 {
+    flex-grow: 0.8;
+}
+
+.flex-grow .item3 {
+    flex-grow: 1;
+}
+
+.flex-shrink .item1 {
+    flex-shrink: 0;
+    /* 이게 없으면 width가 고정되어도 브라우저 크기에 따라 width가 변해버림*/
+    width: 100px;
+}
+
+.flex-shrink .item2 {
+    flex-shrink: 1;
+}
+
+.flex .item1 {
+    /* flex: 1; */
+    /* flex-grow: 1; flex-shrink: 1; flex-basis: 0%; */
+    /* flex: 1 1 auto; */
+    /* flex-grow: 1; flex-shrink: 1; flex-basis: auto; */
+    flex: 1 500px;
+    /* flex-grow: 1; flex-shrink: 1; flex-basis: 500px; */
+}
