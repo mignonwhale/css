@@ -1,0 +1,26 @@
+body {
+    font-family: "D2Coding";
+    background: #f5f4f0;
+}
+
+.thumbnail-item-image {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #f5f4f0;
+
+}
+
+.img {
+    display: block;
+    padding-bottom: 37%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: luminosity;
+}
+
+.img:hover {
+    mix-blend-mode: normal;
+}

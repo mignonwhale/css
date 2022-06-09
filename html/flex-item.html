@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/flex-item.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-inner">
+                <h1>FLEXBOX</h1>
+            </div>
+        </header>
+        <div class="post-section-title">item 속성</div>
+        <h2>flex-basis</h2>
+        <ul>
+            <li>auto</li>
+            <div class="container flex-basis auto">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">auto는 아이템의 width로 flex-basis의 기본값</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>content</li>
+            <div class="container flex-basis content">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">content는 내용에 따라 크기가 결정되고 width=0인 auto와 동일하다.</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>percent</li>
+            <div class="container flex-basis percent">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">percent</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>rem</li>
+            <div class="container flex-basis rem">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">rem</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>px</li>
+            <div class="container flex-basis px">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">px</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>flex-basis px VS width</li>
+            <div class="container flex-basis width">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">width</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+        </ul>
+        <h2>flex-grow</h2>
+        <ul>
+            <li>flex-grow</li>
+            <div class="container flex-grow">
+                <div class="item item1">flex-basis가 차지한 아이템 크기 외 여백을 flex-grow의 비율로 차지한다.</div>
+                <div class="item item2">flex-grow</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+        </ul>
+        <h2>flex-shrink</h2>
+        <ul>
+            <li>flex-shrink</li>
+            <div class="container flex-shrink">
+                <div class="item item1">flex-shrink: 0이면 컨테이너가 아무리 작아져도 width가 고정된다</div>
+                <div class="item item2">helloflex</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+        </ul>
+        <h2>flex</h2>
+        <ul>
+            <li>flex</li>
+            <div class="container flex">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">flex는 flex-grow, flex-shrink, flex-basis 순서대로 하나로 통합해서 사용 가능</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>flex 2</li>
+            <div class="container flex2">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">여백 비율이 아닌 영역 자체를 원하는 비율로 나누고 싶을 때 flex-basis = 0</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>2 column made by flex</li>
+            <div class="container flex3">
+                <div class="item item1">item1</div>
+                <div class="item item2">item2</div>
+                <div class="item item3">item3</div>
+                <div class="item item4">item4</div>
+                <div class="item item5">item5</div>
+                <div class="item item6">item6</div>
+                <div class="item item7">item7</div>
+                <div class="item item8">item8</div>
+                <div class="item item9">item9</div>
+                <div class="item item10">item10</div>
+            </div>
+            <br />
+        </ul>
+        <h2>align-self</h2>
+        <ul>
+            <li>align-self auto</li>
+            <div class="container align-self auto">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">align-self:auto 는 기본값으로 align-items을 상속</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>align-self stretch</li>
+            <div class="container align-self stretch">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">align-self: stretch</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>align-self flex-start</li>
+            <div class="container align-self flex-start">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">align-self: flex-start</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>align-self flex-end</li>
+            <div class="container align-self flex-end">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">align-self: flex-end</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>align-self center</li>
+            <div class="container align-self center">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">align-self: center</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+            <li>align-self baseline</li>
+            <div class="container align-self baseline">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">align-self: baseline</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+        </ul>
+        <h2>order</h2>
+        <ul>
+            <li>order</li>
+            <div class="container order">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">order</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+        </ul>
+        <h2>z-index</h2>
+        <ul>
+            <li>z-index</li>
+            <div class="container z-index">
+                <div class="item item1">helloflex</div>
+                <div class="item item2">z-index</div>
+                <div class="item item3">byeflex</div>
+            </div>
+            <br />
+        </ul>
+    </body>
+</html>
