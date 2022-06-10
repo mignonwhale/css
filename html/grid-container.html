@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GRID</title>
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/grid-container.css"></link>
+    </head>
+    <body>
+        <header class="H-header">
+            <div class="H-header-inner">
+                <h1>GRID</h1>
+            </div>
+        </header>
+        <div class="post-section-title">container 속성</div>
+        <div class="post-section-title">배치</div>
+        <h2>grid-template-columns: 그리드 트랙 크기 지정(고정값)</h2>
+        <div class="container grid-template-columns">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+            <div class="item item6">F</div>
+            <div class="item item7">G</div>
+            <div class="item item8">H</div>
+            <div class="item item9">I</div>
+        </div>
+        <br/>
+        <h2>grid-template-rows: 그리드 트랙 크기 지정(가변값, 비율 fraction)</h2>
+        <div class="container grid-template-rows">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+            <div class="item item6">F</div>
+            <div class="item item7">G</div>
+            <div class="item item8">H</div>
+            <div class="item item9">I</div>
+        </div>
+        <br/>
+        <h2>grid-template-columns: minmax함수, 최소최대값 지정</h2>
+        <div class="container grid-template-columns-minmax">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.</div>
+            <div class="item item5">E</div>
+            <div class="item item6">F</div>
+            <div class="item item7">G</div>
+            <div class="item item8">H</div>
+            <div class="item item9">I</div>
+        </div>
+        <br/>
+        <h2>grid-template-columns: auto-fill과 auto-fit, 자동맞춤과 자동채움</h2>
+        <div class="container grid-template-columns-auto-fill">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+            <div class="item item6">F</div>
+            <div class="item item7">G</div>
+            <div class="item item8">H</div>
+            <div class="item item9">I</div>
+        </div>
+        <br/>
+        <h2>row-gap 간격조정</h2>
+        <div class="container row-gap">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+        </div>
+        <br/>
+        <h2>column-gap 간격조정</h2>
+        <div class="container column-gap">
+            <div class="item item5">E</div>
+            <div class="item item6">F</div>
+            <div class="item item7">G</div>
+            <div class="item item8">H</div>
+            <div class="item item9">I</div>
+        </div>
+        <br/>
+        <h2>gap 간격조정</h2>
+        <div class="container gap">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+            <div class="item item6">F</div>
+            <div class="item item7">G</div>
+            <div class="item item8">H</div>
+            <div class="item item9">I</div>
+        </div>
+        <br/>
+        <h2>grid-auto-rows: 트랙크기 자동 지정, 행/열의 개수 알 수 없을 때 사용</h2>
+        <div class="container grid-auto-rows">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+            <div class="item item6">F</div>
+            <div class="item item7">G</div>
+            <div class="item item8">In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.</div>
+            <div class="item item9">I</div>
+        </div>
+        <div class="post-section-title">정렬</div>
+        <h2>세로 방향 정렬 align-items: stretch </h2>
+        <div class="container align-items align-items-stretch">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+        </div>
+        <br/>
+        <h2>세로 방향 정렬 align-items: start</h2>
+        <div class="container align-items align-items-start">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+        </div>
+        <br/>
+        <h2>세로 방향 정렬 align-items: center</h2>
+        <div class="container align-items align-items-center">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+        </div>
+        <br/>
+        <h2>세로 방향 정렬 align-items: end</h2>
+        <div class="container align-items align-items-end">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+        </div>
+        <br/>
+        <h2>가로 방향 정렬 justify-items: stretch </h2>
+        <div class="container justify-items justify-items-stretch">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+        </div>
+        <br/>
+        <h2>가로 방향 정렬 justify-items: start</h2>
+        <div class="container justify-items justify-items-start">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+        </div>
+        <br/>
+        <h2>가로 방향 정렬 justify-items: center</h2>
+        <div class="container justify-items justify-items-center">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+        </div>
+        <br/>
+        <h2>가로 방향 정렬 justify-items: end</h2>
+        <div class="container justify-items justify-items-end">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+        </div>
+        <br/>
+        <h2>가로, 세로방향 정렬 place-items</h2>
+        <div class="container place-items">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+        </div>
+        <br/>
+        <h2>아이템 그룹 세로 정렬 align-content</h2>
+        <div class="container align-content">
+            <div class="item item1">A</div>
+            <div class="item item2">B</div>
+            <div class="item item3">C</div>
+            <div class="item item4">D</div>
+            <div class="item item5">E</div>
+            <div class="item item6">F</div>
+            <div class="item item7">G</div>
+            <div class="item item8">H</div>
+            <div class="item item9">I</div>
+        </div>
+    </body>
+</html>

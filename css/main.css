@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
 body {
-    font-family: "D2Coding";
+    font-family: 'Noto Serif KR', 'D2Coding';
     background: #f5f4f0;
 }
 
-.header {
+.H-header {
     border-top: 2px solid rgba(50, 50, 40, 0.5);
     border-bottom: 2px solid rgba(50, 50, 40, 0.5);
     position: relative;
 }
 
-.header::before {
+.H-header::before {
     content: '';
     position: absolute;
     left: 0;
@@ -20,7 +22,7 @@ body {
     ;
 }
 
-.header::after {
+.H-header::after {
     content: '';
     position: absolute;
     left: 0;

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/grid-item.css"></link>
+</head>
+<body>
+    <header class="H-header">
+        <div class="H-header-inner">
+            <h1>GRID</h1>
+        </div>
+    </header>
+    <div class="post-section-title">item 속성</div>
+    <div class="post-section-title">영역지정</div>
+    <h2>grid-column, grid-row 각 셀의 영역 지정(그리드라인번호로), 엑셀병합 같은 효과</h2>
+    <div class="container grid-column">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+        <div class="item item4">D</div>
+        <div class="item item5">E</div>
+        <div class="item item6">F</div>
+        <div class="item item7">G</div>
+        <div class="item item8">H</div>
+        <div class="item item9">I</div>
+    </div>
+    <br/>
+    <h2>grid-template-columns(기본규칙)와 grid-column(예외규칙) 결합</h2>
+    <div class="container grid-column2">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+        <div class="item item4">D</div>
+        <div class="item item5">E</div>
+        <div class="item item6">F</div>
+        <div class="item item7">G</div>
+        <div class="item item8">H</div>
+        <div class="item item9">I</div>
+    </div>
+    <br/>
+    <h2>grid-template-areas: 영역 이름으로 그리드 정의</h2>
+    <div class="container grid-template-areas">
+        <div class="item item1 header">A</div>
+        <div class="item item2 header">B</div>
+        <div class="item item3 header">C</div>
+        <div class="item item4 sidebar-a">D</div>
+        <div class="item item5 main-content">E</div>
+        <div class="item item6 sidebar-b">F</div>
+        <div class="item item7">G</div>
+        <div class="item item8">H</div>
+        <div class="item item9">I</div>
+        <div class="item item7 footer">G</div>
+        <div class="item item8 footer">H</div>
+        <div class="item item9 footer">I</div>
+    </div>
+    <br/>
+    <h2>grid-auto-flow: row 아이템 자동배치</h2>
+    <div class="container grid-auto-flow grid-auto-flow-row">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+        <div class="item item4">D</div>
+        <div class="item item5">E</div>
+        <div class="item item6">F</div>
+        <div class="item item7">G</div>
+        <div class="item item8">H</div>
+        <div class="item item9">I</div>
+    </div>
+    <br/>
+    <h2>grid-auto-flow: column 아이템 자동배치</h2>
+    <div class="container grid-auto-flow grid-auto-flow-column">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+        <div class="item item4">D</div>
+        <div class="item item5">E</div>
+        <div class="item item6">F</div>
+        <div class="item item7">G</div>
+        <div class="item item8">H</div>
+        <div class="item item9">I</div>
+    </div>
+    <br/>
+    <h2>grid-auto-flow: dense, row dense 행 기준으로 빈 공간을 매우면서 아이템 자동배치</h2>
+    <div class="container grid-auto-flow grid-auto-flow-dense">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+        <div class="item item4">D</div>
+        <div class="item item5">E</div>
+        <div class="item item6">F</div>
+        <div class="item item7">G</div>
+        <div class="item item8">H</div>
+        <div class="item item9">I</div>
+    </div>
+    <br/>
+    <h2>grid-auto-flow: column dense 열 기준으로 빈 공간을 매우면서 아이템 자동배치</h2>
+    <div class="container grid-auto-flow grid-auto-flow-column-dense">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+        <div class="item item4">D</div>
+        <div class="item item5">E</div>
+        <div class="item item6">F</div>
+        <div class="item item7">G</div>
+        <div class="item item8">H</div>
+        <div class="item item9">I</div>
+    </div>
+    <div class="post-section-title">정렬</div>
+    <h2>align-self 개별 아이템 세로 정렬</h2>
+    <div class="container align-self ">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+        <div class="item item4">D</div>
+        <div class="item item5">E</div>
+        <div class="item item6">F</div>
+        <div class="item item7">G</div>
+        <div class="item item8">H</div>
+        <div class="item item9">I</div>
+    </div>
+    <br/>
+    <h2>justify-self 개별 아이템 가로 정렬</h2>
+    <div class="container justify-self">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+        <div class="item item4">D</div>
+        <div class="item item5">E</div>
+        <div class="item item6">F</div>
+        <div class="item item7">G</div>
+        <div class="item item8">H</div>
+        <div class="item item9">I</div>
+    </div>
+    <br/>
+    <h2>place-self 개별 아이템 가로, 세로 정렬</h2>
+    <div class="container place-self">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+        <div class="item item4">D</div>
+        <div class="item item5">E</div>
+        <div class="item item6">F</div>
+        <div class="item item7">G</div>
+        <div class="item item8">H</div>
+        <div class="item item9">I</div>
+    </div>
+    <div class="post-section-title">배치순서</div>
+    <h2>order</h2>
+    <div class="container order">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+    </div>
+    <br/>
+    <h2>z-index</h2>
+    <div class="container z-index">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+        <div class="item item4">D</div>
+        <div class="item item5">E</div>
+        <div class="item item6">F</div>
+        <div class="item item7">G</div>
+        <div class="item item8">H</div>
+        <div class="item item9">I</div>
+    </div>
+</body>
+</html>
