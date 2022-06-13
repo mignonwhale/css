@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022년 새로운 CSS</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/new-things-2022.css" />
+</head>
+    <header class="H-header">
+        <div class="H-header-inner">
+            <h1>2022년 새로운 CSS</h1>
+        </div>
+    </header>
+    <div class="post-section-title">color-mix()</div>
+    <h2>색상 섞기: 20220613 현재 가능한 브라우저 없어서 테스트 불가</h2>
+    <ul class="color-mix">
+        <li>10% #34c9eb</li>
+        <li>40% #34c9eb</li>
+        <li>70% #34c9eb</li>
+      </ul>
+    <div class="post-section-title">@accent-color</div>
+    <h2>체크박스, 라디오, 레인지, 프로그레스 색상 변경을 손쉽게</h2>
+    <div class="accent-color">
+        checkbox: 
+        <input type="checkbox" checked />
+        <br/>
+        radio: 
+        <input type="radio" checked />
+        <br/>
+        range: 
+        <input type="range" />
+        <br/>
+        progress:
+        <progress></progress>
+        <br/>
+    </div>
+    <div class="post-section-title">color-contrast()</div>
+    <h2>바탕색과 글자색의 대비 자동 조정: 20220613 현재 가능한 브라우저 없어서 테스트 불가</h2>
+    <div class="color-contrast1">
+        빨간바탕에 잘 보이는 글자색은?
+    </div>
+    <div class="color-contrast2">
+        파랑바탕에 잘보이는 글자색을 내가 원하는 색 범위에서 골라라.
+    </div>
+    <div class="post-section-title">@inert</div>
+    <h2>html 속성, 브라우저가 이벤트 동작을 프리징하는 기능</h2>
+    <h4>흡사 모달창이 띄워진것처럼 혹은 버튼 한 번 클릭하면 그 담에 못하게 한다거나 etc</h4>  
+    <form id="main" onsubmit="return false;">
+        <label for="btn1"></label>
+        <button id="btn1" onclick="alertTest()">버튼</button>
+    </form>  
+    <form inert style="display: none;" id="main1">
+        <label for="btn2"></label>
+        <button id="btn2" onclick="alertTest()">버튼</button>
+    </form>
+    <script>
+        function alertTest(){
+            document.querySelector('#main').style.display = "none";
+            document.querySelector('#main1').style.display = "block";
+        }
+    </script>
+</body>
+</html>

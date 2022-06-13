@@ -1,0 +1,24 @@
+.color-mix li:nth-child(1) {
+    background-color: color-mix(in srgb, #34c9eb 10%, white);
+}
+
+.color-mix li:nth-child(2) {
+    background-color: color-mix(in srgb, #34c9eb 40%, white);
+}
+
+.color-mix li:nth-child(3) {
+    background-color: color-mix(in srgb, #34c9eb 70%, white);
+}
+
+.accent-color {
+    accent-color: red
+}
+
+.color-contrast1 {
+    background-color: red;
+    color: color-contrast(red);
+}
+
+.color-contrast2 {
+    color: color-contrast(blue vs pink, yellow, green);
+}
