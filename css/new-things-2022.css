@@ -22,3 +22,7 @@
 .color-contrast2 {
     color: color-contrast(blue vs pink, yellow, green);
 }
+
+.parent:has(p) {
+    background-color: red;
+}

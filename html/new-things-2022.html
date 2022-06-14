@@ -45,20 +45,21 @@
     </div>
     <div class="post-section-title">@inert</div>
     <h2>html 속성, 브라우저가 이벤트 동작을 프리징하는 기능</h2>
-    <h4>흡사 모달창이 띄워진것처럼 혹은 버튼 한 번 클릭하면 그 담에 못하게 한다거나 etc</h4>  
+    <h4>흡사 모달창이 띄워진것처럼 혹은 버튼 한 번 클릭하면 그 담에 못하게 한다거나</h4>  
     <form id="main" onsubmit="return false;">
         <label for="btn1"></label>
         <button id="btn1" onclick="alertTest()">버튼</button>
     </form>  
-    <form inert style="display: none;" id="main1">
-        <label for="btn2"></label>
-        <button id="btn2" onclick="alertTest()">버튼</button>
-    </form>
     <script>
         function alertTest(){
-            document.querySelector('#main').style.display = "none";
-            document.querySelector('#main1').style.display = "block";
+            document.querySelector('form').setAttribute('inert','inert');
+            alert('이제 작동 안함');
         }
     </script>
+    <div class="post-section-title">has()</div>
+    <h2>has의 파라미터를 자식으로 가지고 있는 부모의 스타일을 변경 가능: 20220614 아직 테스트 불가 </h2>
+    <div class="parent">나는 엄빠야
+        <p>나는 자식이야</p>
+    </div>
 </body>
 </html>
