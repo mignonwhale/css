@@ -12,14 +12,7 @@
             <h1>2022년 새로운 CSS</h1>
         </div>
     </header>
-    <div class="post-section-title">color-mix()</div>
-    <h2>색상 섞기: 20220613 현재 가능한 브라우저 없어서 테스트 불가</h2>
-    <ul class="color-mix">
-        <li>10% #34c9eb</li>
-        <li>40% #34c9eb</li>
-        <li>70% #34c9eb</li>
-      </ul>
-    <div class="post-section-title">@accent-color</div>
+    <div class="post-section-title">accent-color</div>
     <h2>체크박스, 라디오, 레인지, 프로그레스 색상 변경을 손쉽게</h2>
     <div class="accent-color">
         checkbox: 
@@ -35,15 +28,7 @@
         <progress></progress>
         <br/>
     </div>
-    <div class="post-section-title">color-contrast()</div>
-    <h2>바탕색과 글자색의 대비 자동 조정: 20220613 현재 가능한 브라우저 없어서 테스트 불가</h2>
-    <div class="color-contrast1">
-        빨간바탕에 잘 보이는 글자색은?
-    </div>
-    <div class="color-contrast2">
-        파랑바탕에 잘보이는 글자색을 내가 원하는 색 범위에서 골라라.
-    </div>
-    <div class="post-section-title">@inert</div>
+    <div class="post-section-title">HTML inert</div>
     <h2>html 속성, 브라우저가 이벤트 동작을 프리징하는 기능</h2>
     <h4>흡사 모달창이 띄워진것처럼 혹은 버튼 한 번 클릭하면 그 담에 못하게 한다거나</h4>  
     <form id="main" onsubmit="return false;">
@@ -56,10 +41,52 @@
             alert('이제 작동 안함');
         }
     </script>
+    <div class="post-section-title">color-mix()</div>
+    <h2>색상 섞기: 20220613 현재 가능한 브라우저 없어서 테스트 불가</h2>
+    <ul class="color-mix">
+        <li>10% #34c9eb</li>
+        <li>40% #34c9eb</li>
+        <li>70% #34c9eb</li>
+      </ul>
+
+    <div class="post-section-title">color-contrast()</div>
+    <h2>바탕색과 글자색의 대비 자동 조정: 20220613 현재 가능한 브라우저 없어서 테스트 불가</h2>
+    <div class="color-contrast1">
+        빨간바탕에 잘 보이는 글자색은?
+    </div>
+    <div class="color-contrast2">
+        파랑바탕에 잘보이는 글자색을 내가 원하는 색 범위에서 골라라.
+    </div>
     <div class="post-section-title">has()</div>
     <h2>has의 파라미터를 자식으로 가지고 있는 부모의 스타일을 변경 가능: 20220614 아직 테스트 불가 </h2>
     <div class="parent">나는 엄빠야
         <p>나는 자식이야</p>
     </div>
+    <div class="post-section-title">@nest</div>
+    <h2>중첩노드를 간편하게 표현 가능: 20220615 테스트 불가</h2>
+    <div class="nest">최상위
+        <p>중간
+            <strong>가장 안쪽</strong>
+        </p>
+    </div>
+    <div class="post-section-title">@scope</div>
+    <h2>유효범위를 지정해서 그 안에서만 영향력을 미칠 수 있도록 제한 가능: 20220615 아직 테스트 불가</h2>
+    <div class="darktheme">
+        <title>
+            다크버전
+        </title>
+        <nav>다크버전 nav</nav>
+    </div>
+    <div class="lighttheme">
+        <title>
+            라이트버전
+        </title>
+        <nav>라이트버전 nav</nav>
+    </div>
+    <div class="post-section-title">@container</div>
+    <h2>브라우저의 가로크기가 아닌 부모 요소의 크기에 맞춰 유동적으로 사이즈 조절 대응을 할 수 있는 기능: 20220615 테스트 불가</h2>
+    <header>
+        <nav>크기 조절이 되나요?</nav>
+    </header>
 </body>
 </html>

@@ -26,3 +26,47 @@
 .parent:has(p) {
     background-color: red;
 }
+
+.nest {
+    background-color: red;
+
+    @nest & p {
+        background-color: blue;
+
+        & strong {
+            color: yellow;
+        }
+    }
+}
+
+@scope (.darktheme) {
+
+    title {
+        color: white;
+    }
+
+    nav {
+        background-color: black;
+    }
+}
+
+@scope (.lighttheme) {
+    title {
+        color: black;
+    }
+
+    nav {
+        background-color: white;
+    }
+}
+
+header {
+    container-type: inline-size;
+    container-name: header-container;
+}
+
+@container header-container (min-width: 600px) {
+    nav {
+        display: flex;
+    }
+}
