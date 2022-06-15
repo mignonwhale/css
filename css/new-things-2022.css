@@ -60,13 +60,21 @@
     }
 }
 
-header {
-    container-type: inline-size;
-    container-name: header-container;
+.card-container {
+    contain: style layout inline-size;
+    width: 50%;
+    border: 1px solid red;
+    padding: 20px;
+    transition: all 1s;
 }
 
-@container header-container (min-width: 600px) {
-    nav {
-        display: flex;
+.title {
+    font-size: 30px;
+}
+
+@container (min-width: 100px) {
+    .title {
+        font-size: 15px;
+        color: gray;
     }
 }
