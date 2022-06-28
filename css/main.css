@@ -19,8 +19,8 @@ body {
     width: 100%;
     height: 2px;
     background: rgb(50, 50, 40);
-    ;
 }
+
 
 .H-header::after {
     content: '';
@@ -30,7 +30,10 @@ body {
     width: 100%;
     height: 2px;
     background: rgb(50, 50, 40);
-    ;
+}
+
+h1 {
+    text-transform: uppercase;
 }
 
 .post-section-title {
