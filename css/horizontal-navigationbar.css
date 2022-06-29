@@ -63,84 +63,36 @@
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  /*위치 고정*/
+  top: 50%;
+  /* top: 0이면 최상단에 고정, bottom: 0이만 최하단 고정*/
+  width: 100%;
 }
 
 .fixed-horizontal-nav li {
   float: left;
 }
 
-/**
-기본 수직 네비바
-*/
-.vertical-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  border: 1px solid #555;
-}
-
-.vertical-nav li a {
+.fixed-horizontal-nav li a {
   display: block;
-  color: #000;
-  padding: 8px 16px;
+  padding: 14px 16px;
+  color: white;
   text-decoration: none;
-}
-
-.vertical-nav li a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-
-.vertical-nav li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-.vertical-nav li {
   text-align: center;
 }
 
-.vertical-nav li:not(:last-child) {
-  border-bottom: 1px solid #555;
+.fixed-horizontal-nav li a:hover:not(.active) {
+  background-color: #111;
 }
 
-/**
-사이드 네비바
-*/
-.full-height {
-  margin: 0;
-  padding: 0;
-}
-
-.full-height ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  height: 100%;
-  position: fixed;
-  /* 스크롤 시에도 고정 */
-  overflow: auto;
-  /* 내용이 많아지면 스크롤이 가능하도록*/
-}
-
-.full-height li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.full-height li a.active {
+.fixed-horizontal-nav .active {
   background-color: #04aa6d;
-  color: white;
 }
 
-.full-height li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+.fixed-horizontal-nav .content {
+  padding: 20px;
+  margin-top: 4%;
+  background-color: #1abc9c;
+  height: 1500px;
 }
