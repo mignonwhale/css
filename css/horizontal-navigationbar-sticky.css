@@ -1,0 +1,49 @@
+body {
+  font-size: 28px;
+}
+
+/**
+고정 수평 네비바
+*/
+
+.sticky-horizontal-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  /*safari용 */
+  position: sticky;
+  /* 이 요소가 스크롤로 top:0 위치에 도달하면 고정, ie는 안됨 */
+  top: 0;
+  /* top: 0이면 최상단에 고정, bottom: 0이만 최하단 고정*/
+  width: 100%;
+}
+
+.sticky-horizontal-nav li {
+  float: left;
+}
+
+.sticky-horizontal-nav li a {
+  display: block;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sticky-horizontal-nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.sticky-horizontal-nav .active {
+  background-color: #04aa6d;
+}
+
+.sticky-horizontal-nav .content {
+  padding: 20px;
+  margin-top: 4%;
+  background-color: #1abc9c;
+  height: 1500px;
+}
