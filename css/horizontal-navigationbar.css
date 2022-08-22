@@ -1,0 +1,98 @@
+/**
+기본 수평 네비바
+*/
+.horizontal-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*위 값이 없으면 배경색이 안 먹음*/
+  background-color: #333;
+}
+
+
+/* 수평바 만드는 방벙 1: 블록요소를 인라인으로 배열*/
+/* .horizontal-nav li {
+  display: inline;
+} */
+
+/* 수평바 만드는 방법 2*/
+.horizontal-nav li {
+  float: left;
+  border-right: 1px solid white;
+}
+
+.horizontal-nav li:last-child {
+  border-right: none;
+}
+
+.horizontal-nav li a {
+  display: block;
+  /*block속성이 있어야 마진이나 패딩을 설정할 수 있다.*/
+  padding: 14px 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.horizontal-nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.horizontal-nav li a.active {
+  background-color: #04aa6d;
+}
+
+.horizontal-nav li.right {
+  float: right;
+}
+
+
+/**
+고정 수평 네비바
+*/
+
+.fixed-horizontal-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  /*위치 고정*/
+  top: 50%;
+  /* top: 0이면 최상단에 고정, bottom: 0이만 최하단 고정*/
+  width: 100%;
+}
+
+.fixed-horizontal-nav li {
+  float: left;
+}
+
+.fixed-horizontal-nav li a {
+  display: block;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.fixed-horizontal-nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.fixed-horizontal-nav .active {
+  background-color: #04aa6d;
+}
+
+.fixed-horizontal-nav .content {
+  padding: 20px;
+  margin-top: 4%;
+  background-color: #1abc9c;
+  height: 1500px;
+}
